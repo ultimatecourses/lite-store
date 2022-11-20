@@ -225,7 +225,7 @@ export class TodoService extends Store<TodoState> {
 
 The `addTodo` method acts as your Action, and the object returned via `setState` acts as your pure function Reducer.
 
-> 💥 View the [unit tests]() for more in-depth usage.
+> 💥 View the [state unit tests](https://github.com/ultimatecourses/lite-store/blob/main/projects/lite-store/src/lib/test/lite-store.state.spec.ts) for more in-depth usage.
 
 Each `setState()` call internally recomposes state and sets it as frozen each time via `Object.freeze()`.
 
@@ -286,7 +286,7 @@ export class TodoService extends Store<TodoState> {
 }
 ```
 
-> 💥 View the [unit tests]() for more in-depth usage.
+> 💥 View the [selector unit tests](https://github.com/ultimatecourses/lite-store/blob/main/projects/lite-store/src/lib/test/lite-store.selectors.spec.ts) for more in-depth usage.
 
 ### ✨ Entity and Ids
 
@@ -440,6 +440,8 @@ export class TodoService extends Store<TodoState> {
 
 This is also fully type safe and behind-the-scenes infers the correct types for you.
 
+> 💥 View the [entity unit tests](https://github.com/ultimatecourses/lite-store/blob/main/projects/lite-store/src/lib/test/lite-store.entities.spec.ts) for more in-depth usage.
+
 ### ✨ Route Guards and Preloading
 
 It's common practice to keep some loading/loaded indicator in your state tree.
@@ -538,4 +540,4 @@ Internally this calls `Observable.complete()`, thus ending any further notificat
 
 ---
 
-I'd recommend checking out the [full unit tests]() to see further use cases.
+I'd recommend checking out the [full unit tests](https://github.com/ultimatecourses/lite-store/blob/main/projects/lite-store/src/lib/test/) to see further use cases.
