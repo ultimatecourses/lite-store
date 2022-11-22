@@ -23,7 +23,7 @@
 * ✅ Immutable Objects by default using `Object.freeze()`
 * ✅ Route guards seamless integration
 
-> View the [Example App]()
+> View the [Example App on StackBlitz](https://stackblitz.com/edit/angular-ivy-kbqjai?file=src%2Fapp%2Fservices%2Ftodo.service.ts)
 
 # Introduction
 
@@ -228,6 +228,24 @@ The `addTodo` method acts as your Action, and the object returned via `setState`
 > 💥 View the [state unit tests](https://github.com/ultimatecourses/lite-store/blob/main/projects/lite-store/src/lib/test/lite-store.state.spec.ts) for more in-depth usage.
 
 Each `setState()` call internally recomposes state and sets it as frozen each time via `Object.freeze()`.
+
+The `setState` call also returns the new composed state, useful for debugging and logging:
+
+```ts
+const initialState = { todos: [] };
+
+@Injectable()
+export class TodoService extends Store<TodoState> {
+  addTodo(todo) {
+    // setState returns the new state, useful for debugging
+    const newState = this.setState((state) => ({
+      todos: [...state.todos, todos]
+    });
+
+    console.log(newState); // { todos: [...] }
+  }
+}
+```
 
 You can also access the static `state` snapshot any time:
 

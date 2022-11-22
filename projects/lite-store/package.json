@@ -1,6 +1,24 @@
 {
-  "name": "lite-store",
+  "name": "@ultimate/lite-store",
   "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ultimatecourses/lite-store.git"
+  },
+  "author": "ultimatecourses",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ultimatecourses/lite-store/issues"
+  },
+  "keywords": [
+    "redux",
+    "rxjs",
+    "reactive",
+    "state management",
+    "angular",
+    "observables"
+  ],
+  "homepage": "https://github.com/ultimatecourses/lite-store#readme",
   "peerDependencies": {
     "@angular/common": "^15.0.0",
     "@angular/core": "^15.0.0"
