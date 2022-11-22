@@ -121,7 +121,7 @@ describe('Entities', () => {
     beforeEach(() => {
       // custom `entityId`
       store = new TestStore(initialState, { entityId: 'name' });
-      // casto invalid `entityId` to `any` to test thrown errors
+      // cast to invalid `entityId` to `any` to test thrown errors
       storeInvalidEntityId = new TestStore(initialState, {
         entityId: 'fml' as any,
       });
