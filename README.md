@@ -1,5 +1,5 @@
 <h1 align="center">
-🔒 @ultimate/lite-store
+📦 @ultimate/lite-store
 </h1>
 <h4 align="center">
   <img width="25" valign="middle" src="https://ultimatecourses.com/static/icons/angular.svg">
