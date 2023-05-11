@@ -335,7 +335,7 @@ const initialState: TodoState = {
 };
 ```
 
-Extending `StoreEntity<T>` automatically adds `ids` and `entities` to your state interface, just both keys to your data structure.
+Extending `StoreEntity<T>` automatically adds `ids` and `entities` to your state interface, just add both keys to your data structure.
 
 Then, get your data and simply call `this.toEntities` on your data structure and pass it into `setState`.
 
